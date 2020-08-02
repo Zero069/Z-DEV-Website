@@ -1,0 +1,138 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(181, 181, 189, 1) 54%, rgba(108, 108, 108, 1) 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #9e9e9e;
+            overflow: hidden;
+        }
+        
+        .concept-two {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        #undraw-img {
+            width: 30%;
+            position: absolute;
+            top: 200px;
+            right: 100px;
+        }
+        
+        #logo {
+            width: 12%;
+            position: absolute;
+            bottom: 590px;
+            right: 1370px;
+        }
+        
+        .hover-enlarge>img {
+            cursor: pointer;
+        }
+        
+        .concept-two {
+            grid: 100% / repeat(6, 1fr);
+            padding: 5em 15em;
+        }
+        
+        .hover-enlarge>img {
+            color: transparent;
+            text-align: 0 1px 1px;
+            -webkit-text-stroke: 2px #fff;
+            text-shadow: none;
+            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .concept-two>.hover-enlarge:hover img {
+            transform: scale(1.2);
+            color: #fff;
+            -webkit-text-stroke: 2px transparent;
+            text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hover-enlarge {
+            display: inline;
+        }
+        
+        .concept-two ul.menu-top {
+            margin-left: 300px;
+            margin-bottom: 100px;
+            float: left;
+        }
+        
+        .concept-two ul.menu-top li {
+            display: inline-block;
+            padding: 20px;
+        }
+        
+        .concept-two ul.menu-top li a {
+            color: #606c7c;
+            transition: ease-in 0.2s;
+            text-decoration: none;
+        }
+        
+        .concept-two ul.menu-top li a:hover {
+            color: #ec4375;
+        }
+        /* Intro Page */
+        
+        #intro {
+            position: absolute;
+            overflow: hidden;
+            min-height: 600px;
+            padding-top: 40px;
+        }
+        
+        #intro .intro-left {
+            display: inline-block;
+            width: 100%;
+            max-width: 400px;
+            padding-left: 80px;
+            padding-top: 60px;
+        }
+        
+        #intro .intro-left h1 {
+            font-size: 2.5em;
+            color: #241b57;
+            line-height: 1.5em;
+            position: relative;
+            margin-bottom: 1em;
+        }
+        
+        #intro .intro-left h1::after {
+            bottom: -24px;
+            left: 0;
+            width: 40px;
+            height: 4px;
+            content: '';
+            border-radius: 5px;
+            background: #ec4357;
+            opacity: 0.4;
+            position: absolute;
+        }
+        
+        #intro .intro-left p {
+            font-size: 1.125em;
+            line-height: 1.75em;
+            text-decoration: none;
+        }
+        
+        #intro .intro-left a.intro-cta {
+            font-weight: 500;
+            display: block;
+            width: 100%;
+            max-width: 180;
+            margin-top: 2em;
+            text-align: center;
+            color: white;
+            border-radius: 3px;
+            background: #ec4357;
+            text-decoration: none;
+        }
